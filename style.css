@@ -436,6 +436,10 @@ h1 {
 }
 
 @media (max-width: 860px) {
+  .hero {
+    padding-top: 64px;
+  }
+
   .hero-inner,
   .about-grid,
   .skills-grid,
@@ -451,13 +455,118 @@ h1 {
   }
 
   .nav-links {
+    order: 3;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 12px 18px;
+    font-size: 0.88rem;
+  }
+
+  .nav-button {
+    min-height: 42px;
+    padding: 0 18px;
+  }
+
+  .hero-inner {
+    gap: 24px;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .cta-row {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .stats {
+    gap: 18px;
+  }
+
+  .stat {
+    min-width: 100px;
+  }
+
+  .profile-card {
+    padding: 18px;
+  }
+
+  .profile-meta {
+    font-size: 0.82rem;
+  }
+
+  .section {
+    padding: 42px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .card,
+  .skill-card,
+  .project-card,
+  .contact-box {
+    border-radius: 20px;
   }
 
   .contact-box {
     flex-direction: column;
     align-items: flex-start;
+    padding: 22px 20px;
+  }
+
+  .site-footer {
+    font-size: 0.85rem;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(100% - 20px, 1120px);
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 10px 14px;
+  }
+
+  .hero {
+    padding-top: 52px;
+  }
+
+  .lead {
+    line-height: 1.55;
+  }
+
+  .card,
+  .skill-card,
+  .project-card {
+    padding: 18px 16px;
+  }
+
+  .mini-item {
+    font-size: 0.96rem;
   }
 }
